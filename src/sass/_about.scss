@@ -1,0 +1,30 @@
+.about {
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 6rem;
+            mix-blend-mode: lighten;
+            margin: 7rem 0;
+
+            &:last-of-type {
+                height: 3rem;
+            }
+        }
+    }
+
+    &__text {
+
+        p {
+            font-size: 3rem;
+            margin-bottom: 7rem;
+        }
+    }
+
+    @media (max-width:900px) {
+        margin-bottom: 15rem;
+    }
+}

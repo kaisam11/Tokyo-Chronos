@@ -1,0 +1,134 @@
+.download {
+
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @media (max-width: 500px) {
+        text-align: center;
+    }
+
+    &__trial {
+        display: flex;
+        width: 100rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 30rem;
+        margin: 15rem auto;
+        overflow: hidden;
+        border: 3px solid transparent;
+        -moz-border-image: -moz-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
+        border-image: linear-gradient(to bottom, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%); 
+        -webkit-border-image-slice: 2;
+        border-image-slice: 2;
+        background: none;
+        padding-left: 5rem;
+
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+
+        .demo {
+            margin-right: 10rem;
+            flex: none;
+
+            h2 {
+                font-size: 10rem;
+                font-weight: 100;
+                width: 100%;
+            }
+        }
+
+        img {
+            margin-left: -20rem;
+            height: 50rem;
+
+            
+        }
+    }
+
+    &__now {
+        display: flex;
+        overflow: hidden;
+        height: 90rem;
+        
+        .cta {
+
+            margin-left: 10rem;
+            h1 {
+                font-size: 9rem;
+                line-height: 7rem;
+                margin: 10rem 0;
+                width: 90rem;
+                color: #fff;
+            }
+
+            img {
+                height: 40rem;
+                mix-blend-mode: normal;
+            }
+
+            @media (max-width: 500px){
+                margin-left: 0;
+            }
+
+            &__link {
+                height: 41rem;
+                width: 33rem;
+                margin-left: 15rem;
+                background-size: contain;
+                position: relative;
+
+                @media (max-width: 900px) {
+                    margin: 0 auto;
+        
+                }
+
+                .arrow {
+                    position: absolute;
+                    bottom: 2rem;
+                    right: 20px;
+                    height: 5rem;
+                    mix-blend-mode: normal;
+                    filter: hue-rotate(45deg);
+                    
+                    &:hover {
+                        filter: hue-rotate(0);
+                    }
+                }
+               
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: -2.7rem;
+                    left: -2.2rem;
+                    width: 110%;
+                    height: 110%;
+                    z-index: -1;
+                    border: 2px solid transparent;
+                    -moz-border-image: -moz-linear-gradient(top, #f8fc1f 0%, #00fff7 100%);
+                    -webkit-border-image: -webkit-linear-gradient(top, #f8fc1f 0%, #00fff7 100%);
+                    border-image: linear-gradient(to bottom, #f8fc1f 0%, #00fff7 100%); 
+        
+                    -webkit-border-image-slice: 2;
+                    border-image-slice: 2;
+                    background: none;
+                }
+            }
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+            
+            img{
+                height: 90rem;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                right: -15rem;
+                z-index: -1;
+            }
+        }
+    }
+}

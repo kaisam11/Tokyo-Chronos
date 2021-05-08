@@ -1,0 +1,123 @@
+@import './hero';
+@import './about';
+@import './features';
+@import './card';
+@import './download';
+@import './footer';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+    @media (min-width: 1650px) {
+        font-size: 13px;
+    }
+
+    @media (max-width: 1280px) {
+        font-size: 9px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 7.5px;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 6px;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 4px;
+    }
+}
+
+body {
+    background-color: #17181c;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #fff; 
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+img {
+    mix-blend-mode: lighten;
+}
+
+.container {
+    padding: 3rem 10rem;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+        padding: 3rem 5rem;
+    }
+}
+
+.btn {
+    font-size: 2rem;
+    background: transparent;
+    border: 1.5px solid;
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+.cursor {
+    position: fixed;
+    top: 400px;
+    left: 400px;
+    width: 32px;
+    height: 32px;
+    // background: transparent;
+    border: 2px solid deeppink;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: all .1s ease-in-out;
+    transition-property: width, height, border;
+    will-change: width, height, transform, border;
+    pointer-events: none;
+    z-index: 10000;
+
+    .hovered {
+        width: 56px;
+        height: 56px; 
+    }
+}
+

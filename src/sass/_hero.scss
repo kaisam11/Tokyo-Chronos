@@ -1,0 +1,110 @@
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+
+    &__logo {
+      mix-blend-mode: lighten;
+      margin-left: -2rem;
+
+      img {
+        height: 5rem;
+
+        @media (max-width:700px) {
+          height: 7rem;
+        }
+      }
+    }
+
+    &__links {
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0 3rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        @media (max-width: 700px) {
+          font-size: 2rem;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          position: relative;
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            background-color: #fff;
+            height: 2px;
+            width: 0;
+            transition: all 0.2s ease-in-out;
+          }
+
+          &:hover:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  height: 100vh;
+  min-height: 80rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 35vh 0;
+  background-image: url(../images/tc1.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  mix-blend-mode: lighten;
+  background-position: center;
+
+  @media (max-width: 700px) {
+    height: 90vh;
+    padding: 35vh 0 0;
+  }
+
+  &__title {
+    font-size: 15rem;
+    line-height: 18rem;
+    mix-blend-mode: exclusion;
+
+    @media (max-width: 500px) {
+      font-size: 11rem;
+    }
+
+    h1:last-of-type {
+      text-align: right;
+    }
+  }
+
+  &__subtitle {
+    text-align: right;
+    background: linear-gradient(
+      90deg,
+      rgba(248, 252, 31, 1) 55%,
+      rgba(0, 255, 243, 1) 70%,
+      rgba(252, 0, 188, 1) 85%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 4rem;
+    line-height: 1rem;
+    color: transparent;
+    mix-blend-mode: screen;
+  }
+}

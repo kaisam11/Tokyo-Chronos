@@ -1,0 +1,52 @@
+.footer {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1280px;
+
+    .logo {
+        height: 15rem;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+        font-weight: 200;
+        text-transform: uppercase;
+
+        &:last-of-type {
+            font-size: 1.5rem;
+
+            a {
+                text-decoration: none;
+                background: linear-gradient(
+                    to bottom, #f8fc1f 0%, #00fff7 100%
+                );
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+
+                &:hover {
+                    filter: hue-rotate(50deg)
+                }
+            
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+
+        img {
+            height: 3rem;
+            margin: 2rem 3rem 5rem;
+            mix-blend-mode: normal;
+
+            &:hover {
+                filter: hue-rotate(50deg)
+            }
+        }
+    }
+}
