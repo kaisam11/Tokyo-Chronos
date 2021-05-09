@@ -1,7 +1,7 @@
 import React from 'react'
 import gsap from 'gsap'
 import { useGlobalStateContext } from '../context/globalContext'
-import tkv2 from '../images/tkv2.webm'
+import tkv1 from '../images/tkv1.mp4'
 
 const Cursor = () => {
     const { cursorType } = useGlobalStateContext()
@@ -40,7 +40,7 @@ const Cursor = () => {
         <>
             <div className={`cursor ${!!cursorType ? 'hovered' : ''} ${cursorType}`} ref={cursor}>
                 <div className="cursor__media">
-                    <video src={tkv2} autoPlay loop muted></video>
+                    <video src={tkv1} autoPlay loop muted></video>
                 </div>
             </div>
         </>
