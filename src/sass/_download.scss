@@ -109,6 +109,10 @@
                     &:hover {
                         filter: hue-rotate(0);
                     }
+
+                    @media (max-width: 600px) {
+                        height: 10rem;
+                    }
                 }
                
                 &:after {

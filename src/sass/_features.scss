@@ -40,6 +40,27 @@
                 object-fit: cover;
                 mix-blend-mode: lighten;
             }
+
+            p {
+                @media (min-width: 900px) {
+                    display: none;
+                }
+                position: absolute;
+                bottom: 25rem;
+                left: 4rem;
+                transform: rotate(45deg);
+                opacity: .8;
+                font-size: 4rem;
+                padding: 4rem;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 200;
+                height: 20rem;
+                width: 20rem;
+                border: 1px solid;
+                align-items: center;
+                border-radius: 100%;
+            }
         }
 
         @media (max-width: 900px) {

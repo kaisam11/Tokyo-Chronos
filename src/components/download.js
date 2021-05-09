@@ -4,7 +4,7 @@ import tc8 from '../images/tc8.webp'
 import download from '../images/download.webp'
 import downArrow from '../images/down-arrow.svg'
 
-const Download = () => {
+const Download = ({onCursor}) => {
     return (
         <>
             <section className="download">
@@ -12,7 +12,7 @@ const Download = () => {
                     <div className="download__trial">
                         <div className="demo">
                             <h2>TRIAL DEMO</h2>
-                            <button className="btn">oculus & steam</button>
+                            <button className="btn" onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")}>oculus & steam</button>
                         </div>
                         <img src={tc7} alt="" />
                     </div>
@@ -22,7 +22,7 @@ const Download = () => {
                         <h1>download now</h1>
                         <div className="cta__link">
                             <img src={download} alt="download" />
-                            <img className="arrow" src={downArrow} alt="" />
+                            <img className="arrow" src={downArrow} alt="" onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")}/>
                         </div>
                     </div>
                     <div className="img">

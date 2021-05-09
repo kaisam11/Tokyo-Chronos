@@ -3,7 +3,7 @@ import psVR from '../images/psVR.png'
 import oculus from '../images/oculus.jpg'
 import steamVR from '../images/steamVR.png'
 
-const About = () => {
+const About = ({onCursor}) => {
     return (
         <>
             <section className="about">
@@ -14,7 +14,7 @@ const About = () => {
                 </div>
                 <div className="about__text container">
                     <p>TOKYO CHRONOS is the VR game that has multiple-choice decision points as well as more than one ending. It has a long story you’ve never experienced before with VR. The game takes place in Shibuya, Tokyo, which has only eight people, including you, the protagonist, Kyosuke Sakurai.</p>
-                    <button className="btn">read more</button>
+                    <button className="btn" onMouseEnter={() => onCursor("hovered")} onMouseLeave={onCursor}>read more</button>
                 </div>
             </section>
 
