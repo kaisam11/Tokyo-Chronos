@@ -1,12 +1,17 @@
 .header {
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 2rem;
 
-    @media (max-width: 900px) {
-      height: 15rem
+    @media (max-width: 1024px) {
+      height: 10rem
+    }
+
+    @media (max-width: 800px) {
+      height: 15rem;
     }
 
     &__logo {
@@ -26,16 +31,29 @@
       display: flex;
 
       img {
-        height: 7rem;
         filter: invert(1);
         mix-blend-mode: normal;
         display: none;
         width: 0;
+        height:0;
 
         @media (max-width: 900px) {
+            height: 10rem;
             display: inline-block;
-            width: 7rem;
-            margin-left: 15rem;
+            width: 10rem;
+            padding: 2rem;
+            margin-left: 5rem;
+            transition: all 0.2s ease-in-out;
+            border-radius: 5px;
+
+            &:hover {
+              background-color: #fff;
+              filter: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+          margin-left: 5rem;
         }
       }
 
@@ -46,7 +64,9 @@
         font-weight: 300;
         text-transform: uppercase;
 
-        
+        @media (max-width: 1024px) {
+          font-size: 2rem; 
+        }
 
         @media (max-width: 900px) {
             display: none; 
@@ -106,6 +126,7 @@
 
     @media (max-width: 500px) {
       font-size: 11rem;
+      line-height: .8;
     }
 
     h1:last-of-type {
@@ -126,6 +147,5 @@
     font-size: 4rem;
     line-height: 1rem;
     color: transparent;
-    mix-blend-mode: screen;
   }
 }

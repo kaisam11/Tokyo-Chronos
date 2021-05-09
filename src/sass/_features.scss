@@ -10,9 +10,8 @@
             line-height: 10rem;
             margin-top: 10rem;
             line-height: 11rem;
-            mix-blend-mode: exclusion;
-
-            
+            mix-blend-mode: difference;
+            filter: drop-shadow(2px 4px 35px black);
         }
 
 
@@ -30,7 +29,6 @@
                 -moz-border-image: -moz-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
                 -webkit-border-image: -webkit-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
                 border-image: linear-gradient(to bottom, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%); 
-    
                 -webkit-border-image-slice: 2;
                 border-image-slice: 2;
                 background: none;
@@ -75,6 +73,24 @@
             .text {
                 font-size: 7rem;
                 margin-top: -25rem;
+            }
+
+            .img {
+
+                img {
+                    width: 85vw;
+                    // height: 
+                }
+
+                &::after {
+                    border: 1px solid transparent;
+                    -moz-border-image: -moz-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
+                    -webkit-border-image: -webkit-linear-gradient(top, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%);
+                    border-image: linear-gradient(to bottom, #f8fc1f 0%, rgba(255, 0, 36, 1) 100%); 
+                    -webkit-border-image-slice: 2;
+                    border-image-slice: 2;
+                    background: none;
+                }
             }
 
          }

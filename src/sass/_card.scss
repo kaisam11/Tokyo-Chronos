@@ -38,8 +38,8 @@
             margin: 0 auto;
 
             @media (max-width: 600px) {
-                height: 90rem;
-                width: 80rem;
+                height: 80rem;
+                width: 100vw;
             }
         }
 
@@ -57,6 +57,8 @@
             }
 
             @media (max-width: 600px) {
+
+                padding: 2rem 4rem;
 
                 h3 {
                     font-size: 10rem;
