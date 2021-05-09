@@ -11,9 +11,9 @@ const Hero = () => {
                         <img src={logoMin} alt="logo" />
                     </div>
                     <ul className="nav__links">
-                        <li><a href="/">about</a></li>
-                        <li><a href="/">contact</a></li>
                         <li><a href="/">home</a></li>
+                        <li><a href="/">contact</a></li>
+                        <li><a href="/">about</a></li>
                     </ul>
                 </nav>
             </header>

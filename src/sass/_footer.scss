@@ -34,6 +34,14 @@
             
             }
         }
+
+        @media (max-width: 600px) {
+            font-size: 3rem;
+
+            &:last-of-type {
+                font-size: 2rem;
+            }
+        }
     }
 
     .social {
@@ -43,6 +51,11 @@
             height: 3rem;
             margin: 2rem 3rem 5rem;
             mix-blend-mode: normal;
+
+            @media (max-width: 600px) {
+                height: 5rem;
+                margin: 4rem 5rem 7rem;
+            }
 
             &:hover {
                 filter: hue-rotate(50deg)

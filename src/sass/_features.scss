@@ -58,19 +58,25 @@
             .img {
                 margin: 0 auto;
 
+                &:after {
+                    left: 0;
+                    top: 0;
+                }
+
                 img {
                     width: 80rem;
                     height: 105rem;
                 }
             }
         }
-         @media (max-width: 500px) {
+         @media (max-width: 600px) {
             width: 100vw;
 
             .text {
                 font-size: 7rem;
                 margin-top: -25rem;
             }
+
          }
     }
 

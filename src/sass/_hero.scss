@@ -5,6 +5,10 @@
     align-items: center;
     height: 2rem;
 
+    @media (max-width: 900px) {
+      height: 10rem;
+    }
+
     &__logo {
       mix-blend-mode: lighten;
       margin-left: -2rem;
@@ -13,7 +17,7 @@
         height: 5rem;
 
         @media (max-width:700px) {
-          height: 7rem;
+          height: 7em;
         }
       }
     }
@@ -29,7 +33,7 @@
         text-transform: uppercase;
 
         @media (max-width: 700px) {
-          font-size: 2rem;
+          font-size: 3rem;
         }
 
         &:last-of-type {
@@ -73,9 +77,10 @@
   mix-blend-mode: lighten;
   background-position: center;
 
-  @media (max-width: 700px) {
+  @media (max-width: 1024px) {
     height: 90vh;
     padding: 35vh 0 0;
+    background-size: cover;
   }
 
   &__title {

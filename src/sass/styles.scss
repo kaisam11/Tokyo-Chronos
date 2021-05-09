@@ -92,10 +92,16 @@ img {
     text-transform: uppercase;
     color: #fff;
     transition: all 0.2s ease-in-out;
+    border-radius: 5px;
 
     &:hover {
         background-color: #fff;
         color: #000;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 3rem;
+        padding: 2rem 4rem;
     }
 }
 

@@ -23,7 +23,12 @@
 
         @media (max-width: 600px) {
             max-width: initial;
-            margin: 10rem 0;
+            margin-bottom: 20rem;
+            
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        
         }
         
         img {
@@ -84,9 +89,14 @@
         }
 
         @media (max-width: 600px) {
-            margin-top: inherit;
-            margin-bottom: inherit;
+            margin-top: 0;
+            margin-bottom: 20rem;
             border: none;
+        
+            img{
+                margin-top: 0;
+            }
+
         }
     }
 
