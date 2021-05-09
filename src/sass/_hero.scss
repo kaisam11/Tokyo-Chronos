@@ -6,7 +6,7 @@
     height: 2rem;
 
     @media (max-width: 900px) {
-      height: 10rem;
+      height: 15rem
     }
 
     &__logo {
@@ -16,14 +16,28 @@
       img {
         height: 5rem;
 
-        @media (max-width:700px) {
-          height: 7em;
+        @media (max-width:900px) {
+          height: 10rem;
         }
       }
     }
 
     &__links {
       display: flex;
+
+      img {
+        height: 7rem;
+        filter: invert(1);
+        mix-blend-mode: normal;
+        display: none;
+        width: 0;
+
+        @media (max-width: 900px) {
+            display: inline-block;
+            width: 7rem;
+            margin-left: 15rem;
+        }
+      }
 
       li {
         list-style: none;
@@ -32,8 +46,10 @@
         font-weight: 300;
         text-transform: uppercase;
 
-        @media (max-width: 700px) {
-          font-size: 3rem;
+        
+
+        @media (max-width: 900px) {
+            display: none; 
         }
 
         &:last-of-type {

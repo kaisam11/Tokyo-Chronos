@@ -1,5 +1,8 @@
 import React from 'react'
 import logoMin from '../images/logo-min.jpeg'
+import home from '../images/home.svg'
+import contact from '../images/call.svg'
+import about from '../images/info.svg'
 
 const Hero = () => {
 
@@ -14,6 +17,9 @@ const Hero = () => {
                         <li><a href="/">home</a></li>
                         <li><a href="/">contact</a></li>
                         <li><a href="/">about</a></li>
+                        <img src={home} alt="" />
+                        <img src={contact} alt="" />
+                        <img src={about} alt="" />
                     </ul>
                 </nav>
             </header>
